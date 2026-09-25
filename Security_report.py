@@ -339,16 +339,71 @@ def get_logs():
 
 
 def generate_report():
+
+    print()
+    print("=" * 60)
+    print("                 LINUX SECURITY AUDIT")
+    print("=" * 60)
+    print()
+
+    print("─" * 60)
+    print("                    SYSTEM INFORMATION")
+    print("─" * 60)
+    print()
+
     get_cpu()
+    print()
     get_ram()
+    print()
     get_disk()
+
+    print()
+    print("─" * 60)
+    print("                    DISK PARTITIONS")
+    print("─" * 60)
+    print()
+
     get_partitions()
+
+    print()
+    print("─" * 60)
+    print("                    USER ACCOUNTS")
+    print("─" * 60)
+    print()
+
     get_users()
+
+    print()
+    print("─" * 60)
+    print("                    NETWORK INFORMATION")
+    print("─" * 60)
+    print()
+
     get_network()
     get_gateway()
     get_dns()
+
+    print()
+    print("─" * 60)
+    print("                    LISTENING PORTS")
+    print("─" * 60)
+    print()
+
     get_ports()
+
+    print()
+    print("─" * 60)
+    print("                    SECURITY LOGS")
+    print("─" * 60)
+    print()
+
     get_logs()
+
+    print()
+    print("=" * 60)
+    print("                    AUDIT COMPLETE")
+    print("=" * 60)
+    print()
 
 
 if __name__ == '__main__':
